@@ -14,6 +14,6 @@ Then open `http://127.0.0.1:4178`.
 
 ## Published site
 
-https://dellmodrun.github.io/Cellroom/
+https://cellroom.fun/
 
 The static frontend includes the landing page, animations, dialogs and workspace views. Authentication, hosted AI containers and billing require a compatible backend service.

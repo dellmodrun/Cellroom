@@ -37,14 +37,17 @@ body {
   color: var(--ink);
 }
 
-.outer {
-  background:
-    radial-gradient(circle at 50% -10%, rgba(32, 245, 138, .09), transparent 34%),
-    #000;
-}
-
-.page {
-  box-shadow: 0 0 0 1px rgba(32, 245, 138, .05), 0 30px 100px rgba(0, 0, 0, .8);
+.hero {
+  --ground: #f3f2f0;
+  --body2: #4a4a47;
+  --card: #f7f7f5;
+  --white: #fff;
+  --chip: #f6fbf7;
+  --ink: #111;
+  --mute: #a6a6a4;
+  --soft: #5f5f5d;
+  --line: #dcdbd7;
+  color: #111;
 }
 
 .top-wrap,
@@ -76,8 +79,7 @@ footer,
 }
 
 .brand-mark,
-.footer-mark,
-.cellroom-hero-logo {
+.footer-mark {
   position: relative;
   display: inline-block;
   flex: none;
@@ -97,19 +99,6 @@ footer,
   transform: translate(-9px, -10px);
 }
 
-.cellroom-hero-logo {
-  width: 132px;
-  height: 108px;
-  margin: -26px 0 0;
-  filter: drop-shadow(0 18px 34px rgba(32, 245, 138, .16));
-}
-
-.cellroom-hero-logo img {
-  width: 224px;
-  max-width: none;
-  transform: translate(-46px, -54px);
-}
-
 .footer-mark {
   width: 24px;
   height: 24px;
@@ -122,32 +111,24 @@ footer,
   transform: translate(-10px, -11px);
 }
 
-.hero {
-  background:
-    linear-gradient(rgba(32, 245, 138, .025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(32, 245, 138, .025) 1px, transparent 1px),
-    radial-gradient(circle at 50% 34%, rgba(32, 245, 138, .11), transparent 34%),
-    #030403;
-  background-size: 34px 34px, 34px 34px, auto, auto;
-}
-
-#cv {
-  display: none !important;
-}
-
-.hero-in {
-  max-width: 640px;
-}
-
-.hero h1 {
-  text-shadow: 0 0 42px rgba(32, 245, 138, .08);
-}
-
-.annc span,
 .works ul,
 .tiers .tl,
 .fcols h4 {
   color: #969c98;
+}
+
+.hero .annc span {
+  color: #3d3d3b;
+}
+
+.hero .annc a {
+  background: #111;
+  color: #fff;
+}
+
+.hero .annc a:hover {
+  background: var(--green);
+  color: #00140a;
 }
 
 .annc a,
@@ -173,13 +154,13 @@ footer,
   background-color: #121a15;
 }
 
+.hero .chips button:hover {
+  background-color: #fff;
+}
+
 .ask {
   border: 1px solid #25362c;
   box-shadow: 0 24px 70px -32px rgba(32, 245, 138, .48);
-}
-
-.tick {
-  --ink: #8d9691;
 }
 
 .facts dd b,
@@ -193,7 +174,7 @@ footer,
 
 .art-logo {
   color: transparent;
-  background: url("./assets/cellroom-logo.png") center / 210% no-repeat;
+  background: url("./assets/cellroom-logo-transparent.png") center / 210% no-repeat;
 }
 
 .art-logo path {
@@ -211,16 +192,4 @@ input,
 textarea,
 select {
   color-scheme: dark;
-}
-
-@media (max-width: 600px) {
-  .cellroom-hero-logo {
-    width: 110px;
-    height: 88px;
-  }
-
-  .cellroom-hero-logo img {
-    width: 188px;
-    transform: translate(-39px, -46px);
-  }
 }

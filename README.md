@@ -1,6 +1,6 @@
 # Cellroom local frontend
 
-Cellroom is a black-and-neon workspace for turning websites, apps, repositories and contracts into working builds.
+Cellroom is a black-and-neon workspace for turning websites, apps, repositories and Solana programs into working builds.
 
 ## Start
 

@@ -105,7 +105,7 @@
         <div class="ask-l">
           <button type="button" class="ask-ib" data-ins="https://" aria-label="Add a website link"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.8 9.2a3 3 0 0 0 4.3 0l2.2-2.2a3 3 0 0 0-4.3-4.3l-.9.9M9.2 6.8a3 3 0 0 0-4.3 0L2.7 9a3 3 0 0 0 4.3 4.3l.9-.9"/></svg></button>
           <button type="button" class="ask-ib" data-ins="github.com/" aria-label="Add a GitHub repo"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM4.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM11.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM4.5 5v6M11.5 7c0 2.5-2 3-5.5 4"/></svg></button>
-          <span class="ask-hint">Repo · website · contract</span>
+          <span class="ask-hint">Repo · website · Solana program</span>
         </div>
         <button type="submit" class="ask-go" aria-label="Run"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5"/></svg></button>
       </div>
@@ -114,7 +114,7 @@
     <div class="chips" aria-label="Examples">
       <button type="button" class="tick" data-fill="Rebuild https://studio.example.com, but make it for my business: Juniper Bakery, sourdough and pastries."><svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2zM2 8h12M8 2c1.8 1.7 2.6 3.7 2.6 6S9.8 12.3 8 14c-1.8-1.7-2.6-3.7-2.6-6S6.2 3.7 8 2z"/></svg>Rebuild a site for my business</button>
       <button type="button" class="tick" data-fill="Recreate the login flow from github.com/acme/checkout in a fresh project."><svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM4.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM11.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM4.5 5v6M11.5 7c0 2.5-2 3-5.5 4"/></svg>Recreate a feature</button>
-      <button type="button" class="tick" data-fill="Make my own version of 0x7a3f9c21b4d0e91c with a 2% fee."><svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.8 13.5 5v6L8 14.2 2.5 11V5zM6 8h4M8 6v4"/></svg>Make my own token</button>
+      <button type="button" class="tick" data-fill="Build a Solana token with my own supply, metadata and launch settings."><svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.8 13.5 5v6L8 14.2 2.5 11V5zM6 8h4M8 6v4"/></svg>Build a Solana token</button>
       <button type="button" class="tick" data-fill="How does github.com/acme/checkout handle login?"><svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2.5h7l3 3v8H3zM10 2.5v3h3M5.5 8.5h5M5.5 11h3.5"/></svg>Explain a repo</button>
       <button type="button" class="tick" data-fill="Rebuild the hero animation from https://studio.example.com"><svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 8c1.6-4 3.2-4 4.8 0s3.2 4 4.8 0 2.4-2.6 3.4-1.5"/></svg>Copy an animation</button>
       <button type="button" class="tick" data-fill="Compare my rebuild with the original and fix what is off."><svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>Fix my version</button>
@@ -135,7 +135,7 @@
               <ul class="starts">
                 <li><button type="button" class="start" data-send="Rebuild https://studio.example.com, but make it for my business."><span class="n">01</span><span class="t"><b>Rebuild a site for my business</b><span>Same feel and motion, your name and copy.</span></span><span class="k">Website</span><span class="a"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M1 6h9.5M6.5 2l4 4-4 4"/></svg></span></button></li>
                 <li><button type="button" class="start" data-send="Recreate the login flow from github.com/acme/checkout in a fresh project."><span class="n">02</span><span class="t"><b>Recreate a feature</b><span>Lift one flow out of a codebase, working.</span></span><span class="k">Repo</span><span class="a"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M1 6h9.5M6.5 2l4 4-4 4"/></svg></span></button></li>
-                <li><button type="button" class="start" data-send="Make my own version of 0x7a3f9c21b4d0e91c with a 2% fee."><span class="n">03</span><span class="t"><b>Make my own version of a token</b><span>Same mechanics, your settings, fuzz-tested.</span></span><span class="k">Contract</span><span class="a"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M1 6h9.5M6.5 2l4 4-4 4"/></svg></span></button></li>
+                <li><button type="button" class="start" data-send="Build a Solana token with my own supply, metadata and launch settings."><span class="n">03</span><span class="t"><b>Build a Solana token</b><span>SPL or Token-2022, with your supply and metadata.</span></span><span class="k">Solana</span><span class="a"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M1 6h9.5M6.5 2l4 4-4 4"/></svg></span></button></li>
                 <li><button type="button" class="start" data-send="Help me rebuild a game from its source code or original game files. Identify the engine and platform, explain what can be recovered or recompiled, and propose a small playable version to build first."><span class="n">04</span><span class="t"><b>Rebuild a classic game</b><span>Explore its code or game files. Recreate how it plays.</span></span><span class="k">Game</span><span class="a"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M1 6h9.5M6.5 2l4 4-4 4"/></svg></span></button></li>
               </ul>
             </div>
@@ -193,12 +193,12 @@
         <div class="sugs" id="sugs"></div>
         <form class="composer" id="composer">
           <p id="runAllowance" aria-live="polite"></p>
-          <textarea id="prompt" rows="2" placeholder="Paste a repo, URL or contract, then ask…" aria-label="Message Cellroom"></textarea>
+          <textarea id="prompt" rows="2" placeholder="Paste a repo, URL or Solana program, then ask…" aria-label="Message Cellroom"></textarea>
           <div class="crow">
             <div class="cpills">
               <button type="button" class="cp" data-ins="github.com/">Repo</button>
               <button type="button" class="cp" data-ins="https://">Website</button>
-              <button type="button" class="cp" data-ins="0x">Contract</button>
+              <button type="button" class="cp" data-ins="Solana program: ">Solana program</button>
             </div>
             <div class="run-controls"><button type="button" id="pauseRun" hidden>Pause</button><button type="button" id="cancelRun" class="stop-run" hidden>Stop</button><button class="send" id="send" type="submit">Run</button></div>
           </div>
@@ -215,7 +215,7 @@
     <li><svg viewBox="0 0 16 16" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3.5h12v9H2zM2 6h12M4 4.8h.01M5.5 4.8h.01"/></svg>Web apps</li>
     <li><svg viewBox="0 0 16 16" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 2.5h4.5v4.5H2.5zM9 2.5h4.5v4.5H9zM2.5 9h4.5v4.5H2.5zM9 9h4.5v4.5H9z"/></svg>Features</li>
     <li><svg viewBox="0 0 16 16" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM4.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM11.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM4.5 5v6M11.5 7c0 2.5-2 3-5.5 4"/></svg>Repos</li>
-    <li><svg viewBox="0 0 16 16" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.8 13.5 5v6L8 14.2 2.5 11V5zM6 8h4M8 6v4"/></svg>Contracts</li>
+    <li><svg viewBox="0 0 16 16" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.8 13.5 5v6L8 14.2 2.5 11V5zM6 8h4M8 6v4"/></svg>Solana programs</li>
     <li><svg viewBox="0 0 16 16" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 8c1.6-4 3.2-4 4.8 0s3.2 4 4.8 0 2.4-2.6 3.4-1.5"/></svg>Animations</li>
   </ul>
 </section>
@@ -259,15 +259,16 @@
 <section class="token" id="token">
   <div class="tokgrid">
     <div>
-      <span class="lbl tick">Compute token · Coming later</span>
+      <span class="lbl tick">Solana token · Coming later</span>
       <h2><span class="re">$CELLROOM</span> is the next step.</h2>
-      <p class="lede">The invite beta uses your own OpenAI API key, with limited workspace time included. OpenAI bills your usage directly. Pause or stop your agent from the chat whenever you need to change course. Token-funded model calls and machine time are planned for a later release; deposits and paid credits are not available yet.</p>
+      <p class="lede">The invite beta uses your own OpenAI API key, with limited workspace time included. OpenAI bills your usage directly. $CELLROOM will launch on Solana. Token-funded model calls and machine time are planned for a later release; deposits and paid credits are not available yet.</p>
     </div>
     <dl class="facts">
       <dt>Ticker</dt><dd><b>$CELLROOM</b></dd>
-      <dt>Network</dt><dd>Robinhood Chain</dd>
+      <dt>Network</dt><dd>Solana</dd>
+      <dt>Token standard</dt><dd>SPL / Token-2022</dd>
       <dt>Planned utility</dt><dd>Model calls and container time</dd>
-      <dt>Contract</dt><dd>Published at launch</dd>
+      <dt>Mint address</dt><dd>Published at launch</dd>
     </dl>
   </div>
   <ul class="tiers">
@@ -285,14 +286,14 @@
       <nav class="fcols" aria-label="Footer">
         <div><h4>Product</h4><ul><li><a href="#open-rebot">Open Cellroom</a></li><li><a href="#start-container">Start a container</a></li><li><a href="#documentation">Documentation</a></li></ul></div>
         <div><h4>Learn</h4><ul><li><a href="#top">How it works</a></li><li><a href="#container">The container</a></li><li><a href="#token">$CELLROOM</a></li></ul></div>
-        <div><h4>Community</h4><ul><li><a href="https://x.com/cellroomcoin" target="_blank" rel="noreferrer">X</a></li><li><a href="#telegram">Telegram</a></li><li><a href="#github">GitHub</a></li></ul></div>
+        <div><h4>Community</h4><ul><li><a href="https://x.com/cellroomcoin" target="_blank" rel="noreferrer">X</a></li></ul></div>
       </nav>
     </div>
     <p class="wordmark"><span class="re">Cell</span>room</p>
   </div>
   <div class="fbar">
     <span class="footer-mark" role="img" aria-label="Cellroom"><img src="./assets/cellroom-logo-transparent.png" alt=""></span>
-    <span>Launching on Robinhood Chain</span>
+    <span>Launching on Solana</span>
     <span class="hide-s"><span class="re">Cellroom</span> · Build anything.</span>
     <span>© 2026</span>
   </div>

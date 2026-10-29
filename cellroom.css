@@ -105,15 +105,20 @@ footer,
 }
 
 .footer-mark {
+  display: grid;
   width: 24px;
   height: 24px;
-  border: 1px solid rgba(32, 245, 138, .24);
+  overflow: visible;
+  place-items: center;
+  background: transparent;
 }
 
 .footer-mark img {
-  width: 44px;
+  width: 30px;
+  height: 30px;
   max-width: none;
-  transform: translate(-10px, -11px);
+  object-fit: contain;
+  transform: none;
 }
 
 .works ul,

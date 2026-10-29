@@ -378,7 +378,7 @@ select {
 
 .ca-strip {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
   gap: 10px;
   min-height: 32px;
@@ -397,54 +397,13 @@ select {
   white-space: nowrap;
 }
 
-.ca-copy {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  min-width: 0;
-  height: 22px;
-  color: #a9b5ad;
-  padding: 0 8px;
-  border-left: 1px solid #26342b;
-  border-right: 1px solid #26342b;
-}
-
-.ca-copy code {
-  min-width: 0;
-  overflow: hidden;
+.ca-pending {
   color: #eef5f0;
   font: inherit;
-  letter-spacing: .015em;
-  text-overflow: ellipsis;
+  letter-spacing: .12em;
+  padding-left: 10px;
+  border-left: 1px solid #26342b;
   white-space: nowrap;
-}
-
-.ca-copy:hover,
-.ca-copy.is-copied {
-  color: var(--green);
-}
-
-.ca-copy.is-copied code {
-  color: var(--green);
-}
-
-.ca-strip > a {
-  color: #c9d2cc;
-  padding: 6px 7px;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.ca-strip > a:hover,
-.mint-link:hover {
-  color: var(--green);
-}
-
-.mint-link {
-  color: inherit;
-  font-family: var(--mono);
-  text-decoration: none;
 }
 
 @media (max-width: 700px) {
@@ -455,14 +414,6 @@ select {
     padding-left: 9px;
   }
 
-  .ca-copy {
-    border-right: 0;
-    padding-right: 4px;
-  }
-
-  .ca-strip > a {
-    display: none;
-  }
 }
 
 @media (max-width: 430px) {

@@ -38,16 +38,16 @@ body {
 }
 
 .hero {
-  --ground: #f3f2f0;
-  --body2: #4a4a47;
-  --card: #f7f7f5;
-  --white: #fff;
-  --chip: #f6fbf7;
-  --ink: #111;
-  --mute: #a6a6a4;
-  --soft: #5f5f5d;
-  --line: #dcdbd7;
-  color: #111;
+  --ground: #090909;
+  --body2: #a6aaa8;
+  --card: #121212;
+  --white: #000;
+  --chip: #0d1511;
+  --ink: #f4f6f5;
+  --mute: #717674;
+  --soft: #a1a6a3;
+  --line: #232624;
+  color: var(--ink);
 }
 
 .top-wrap,
@@ -118,12 +118,12 @@ footer,
 }
 
 .hero .annc span {
-  color: #3d3d3b;
+  color: var(--body2);
 }
 
 .hero .annc a {
-  background: #111;
-  color: #fff;
+  background: var(--green);
+  color: #00140a;
 }
 
 .hero .annc a:hover {
@@ -155,7 +155,7 @@ footer,
 }
 
 .hero .chips button:hover {
-  background-color: #fff;
+  background-color: #121a15;
 }
 
 .ask {

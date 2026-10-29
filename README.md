@@ -1,6 +1,6 @@
-# reBot local frontend
+# Cellroom local frontend
 
-This folder contains a local static mirror of the public frontend at `https://rebot.tools/`.
+Cellroom is a black-and-neon workspace for turning websites, apps, repositories and contracts into working builds.
 
 ## Start
 
@@ -12,4 +12,8 @@ node server.mjs
 
 Then open `http://127.0.0.1:4178`.
 
-The visual frontend, animations, dialogs and workspace views are mirrored locally. Authentication, AI containers, billing and other server-side operations still depend on the original service and are not reproduced by this static copy.
+## Published site
+
+https://dellmodrun.github.io/Cellroom/
+
+The static frontend includes the landing page, animations, dialogs and workspace views. Authentication, hosted AI containers and billing require a compatible backend service.

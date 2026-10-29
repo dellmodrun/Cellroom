@@ -41,7 +41,7 @@ const server = http.createServer(async (request, response) => {
 
 server.listen(port, host, () => {
   const url = `http://${host}:${port}`;
-  console.log(`reBot local frontend: ${url}`);
+  console.log(`Cellroom local frontend: ${url}`);
   console.log('Press Ctrl+C to stop.');
   if (!process.argv.includes('--no-open') && process.platform === 'win32') {
     const child = spawn('cmd', ['/c', 'start', '', url], { detached: true, stdio: 'ignore', windowsHide: true });

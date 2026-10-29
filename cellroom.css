@@ -284,20 +284,21 @@ select {
   overflow: hidden;
 }
 
-.wallet-icon svg {
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
+.wallet-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .phantom-icon {
-  background: #ab9ff2;
-  color: #fff;
+  padding: 7px;
+  background: #fff;
 }
 
 .solflare-icon {
-  background: #fc7427;
-  color: #fff;
+  border-radius: 9px;
+  background: #ffef46;
 }
 
 .wallet-option span:nth-child(2) {

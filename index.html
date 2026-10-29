@@ -86,8 +86,8 @@
     <nav aria-label="Main"><ul class="links" id="nav"></ul></nav>
     <div class="util">
       <a class="pill sq" href="https://x.com/cellroomcoin" target="_blank" rel="noreferrer" aria-label="Cellroom on X"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M12.3 1.4h2.3L9.6 7.1l5.8 7.5h-4.5L7.4 10l-4 4.6H1.1l5.3-6.1L.9 1.4h4.6l3.2 4.2zm-.8 11.9h1.3L4.7 2.7H3.3z"/></svg></a>
-      <button type="button" class="pill bal" id="addCredits" title="Account credits"><b id="bal">—</b><span>USD credits</span></button><button type="button" class="pill" id="signIn">Sign in</button>
-      <span class="pill status">Invite beta · Bring your own key</span>
+      <button type="button" class="pill bal" id="addCredits" title="Account credits" hidden><b id="bal">—</b><span>USD credits</span></button><button type="button" class="pill" id="signIn">Connect wallet</button>
+      <span class="pill status">Solana · Bring your own key</span>
     </div>
   </header>
 </div>
@@ -303,6 +303,23 @@
 </div>
 </div>
 
+
+<dialog class="account-dialog wallet-dialog" id="walletDialog" aria-labelledby="walletTitle" aria-describedby="walletDescription">
+  <button type="button" class="wallet-close" id="walletClose" aria-label="Close wallet dialog">×</button>
+  <span class="wallet-kicker">SOLANA MAINNET</span>
+  <h2 id="walletTitle">Connect your wallet</h2>
+  <p id="walletDescription">Connect directly from your browser. Cellroom never receives your private key.</p>
+  <div class="wallet-options" id="walletOptions">
+    <button type="button" class="wallet-option" data-wallet="phantom"><span class="wallet-icon phantom-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.3 4.5C18.6 2.8 16.2 2 13.4 2 7.1 2 3 6.7 3 12.8c0 2.4.6 5.2 2.7 5.2 1.2 0 2.1-.9 2.7-1.8.6 1.5 1.7 2.4 3.2 2.4 1.4 0 2.5-.8 3.2-2 1.2 1.1 2.9 1.2 4.1.2 1.5-1.3 2.1-3.8 2.1-6.4 0-2.4-.2-4.4-.7-5.9Zm-9.4 7.1c-.7 0-1.2-.6-1.2-1.3s.5-1.3 1.2-1.3 1.2.6 1.2 1.3-.5 1.3-1.2 1.3Zm4.9 0c-.7 0-1.2-.6-1.2-1.3S15.1 9 15.8 9s1.2.6 1.2 1.3-.5 1.3-1.2 1.3Z"/></svg></span><span><b>Phantom</b><small>Browser extension or mobile app</small></span><span aria-hidden="true">→</span></button>
+    <button type="button" class="wallet-option" data-wallet="solflare"><span class="wallet-icon solflare-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 1.8 14 8l6-2.1-3.6 5.4 5.5 3-6.3.5.5 6.3-4.1-4.8-4.1 4.8.5-6.3-6.3-.5 5.5-3L4 8l6 2.1 2-6.3Z"/></svg></span><span><b>Solflare</b><small>Browser extension or mobile app</small></span><span aria-hidden="true">→</span></button>
+  </div>
+  <div class="wallet-connected" id="walletConnected" hidden>
+    <span class="wallet-connected-label"><i aria-hidden="true"></i><span id="walletName">Wallet connected</span></span>
+    <code id="walletAddress"></code>
+    <div class="wallet-actions"><button type="button" id="walletCopy">Copy address</button><button type="button" id="walletDisconnect">Disconnect</button></div>
+  </div>
+  <p class="wallet-status" id="walletStatus" role="status" aria-live="polite">Choose a Solana wallet to continue.</p>
+</dialog>
 
 <dialog class="account-dialog usage-dialog" id="billingDialog" aria-labelledby="billingTitle" aria-describedby="billingContext">
   <form method="dialog" class="usage-form">

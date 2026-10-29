@@ -88,15 +88,20 @@ footer,
 }
 
 .brand-mark {
-  width: 22px;
-  height: 22px;
-  border: 1px solid rgba(32, 245, 138, .28);
+  display: grid;
+  width: 24px;
+  height: 24px;
+  overflow: visible;
+  place-items: center;
+  background: transparent;
 }
 
 .brand-mark img {
-  width: 40px;
+  width: 30px;
+  height: 30px;
   max-width: none;
-  transform: translate(-9px, -10px);
+  object-fit: contain;
+  transform: none;
 }
 
 .footer-mark {

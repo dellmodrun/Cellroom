@@ -1,0 +1,1 @@
+import{Xt as e}from"./call-BvXtgyK8.js";function t(t,n=`wei`){return e(t,n)}export{t};

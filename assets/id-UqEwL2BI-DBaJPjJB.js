@@ -1,0 +1,1 @@
+var e=({address:e,nonce:t})=>`${window.location.host} wants you to sign in with your Solana account:\n${e}\n\n${`You are proving you own ${e}.`}\n\nURI: ${window.location.origin}\nVersion: 1\nChain ID: mainnet\nNonce: ${t}\nIssued At: ${new Date().toISOString()}\nResources:\n- https://privy.io`,t=Symbol(`solana-funding-plugin`),n=Symbol(`solana-ledger-plugin`);export{n,e as r,t};

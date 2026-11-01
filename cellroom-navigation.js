@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const walletStatus = document.getElementById("walletStatus");
   const walletCopy = document.getElementById("walletCopy");
   const walletDisconnect = document.getElementById("walletDisconnect");
+  const tokenCaCopy = document.getElementById("tokenCaCopy");
+  const tokenCaCopyLabel = document.getElementById("tokenCaCopyLabel");
   const preferredWalletKey = "cellroom-solana-wallet";
   let activeProvider = null;
   let activeWallet = null;
@@ -168,6 +170,22 @@ document.addEventListener("DOMContentLoaded", () => {
       await activeProvider?.disconnect?.();
     } catch {}
     clearWallet();
+  });
+
+  tokenCaCopy?.addEventListener("click", async () => {
+    const address = tokenCaCopy.dataset.ca;
+    if (!address) return;
+    try {
+      await navigator.clipboard.writeText(address);
+      tokenCaCopyLabel.textContent = "Copied";
+      tokenCaCopy.classList.add("is-copied");
+      window.setTimeout(() => {
+        tokenCaCopyLabel.textContent = "Copy";
+        tokenCaCopy.classList.remove("is-copied");
+      }, 1800);
+    } catch {
+      tokenCaCopyLabel.textContent = "Select CA";
+    }
   });
 
   new MutationObserver(renderWallet).observe(walletButton, {
